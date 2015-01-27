@@ -18,6 +18,7 @@
 
 <div class="wrapper">
 	<div class="chart-map">
+		<div class="country chart-avg"><p class="name">average</p></div>
 		<div class="country chart-austin"><p class="name">austin</p></div>
 		<div class="country chart-boston"><p class="name">boston</p></div>
 		<div class="country chart-chattanoga"><p class="name">chattanoga</p></div>
@@ -32,7 +33,7 @@
 		<div class="country chart-barcelona"><p class="name">barcelona</p></div>
 		<div class="country chart-london"><p class="name">london</p></div>
 		<div class="country chart-paris"><p class="name">paris</p></div>
-		<div class="country chart-avg"><p class="name">average</p></div>
+		
 	
 	</div> <!-- end of chart-map -->
 
@@ -43,7 +44,7 @@
 
 <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
 <script type="text/javascript" src="assets/js/radar-chart.js"></script>
-<script type="text/javascript" src="assets/js/data.js"></script>
+<script type="text/javascript" src="assets/js/charts.js"></script>
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 
 <script>
@@ -53,9 +54,19 @@ RadarChart.defaultConfig.color = function() {};
 
 <script>
 	RadarChart.defaultConfig.levelTick = true;
+	RadarChart.defaultConfig.radius = 2;
+	RadarChart.defaultConfig.radius = 2;
+	RadarChart.defaultConfig.w = 280;
+	RadarChart.defaultConfig.h = 280;
+
+	RadarChart.defaultConfig.axisText = true;
+	// RadarChart.defaultConfig.radius = 2;
+	RadarChart.draw(".chart-avg", avg);
+
+	//City
+	RadarChart.defaultConfig.w = 280;
+	RadarChart.defaultConfig.h = 280;
 	RadarChart.defaultConfig.axisText = false;
-	RadarChart.defaultConfig.radius = 2;
-	RadarChart.defaultConfig.radius = 2;
 	RadarChart.draw(".chart-austin", austin);
 	RadarChart.draw(".chart-boston", boston);
 	RadarChart.draw(".chart-chattanoga", chattanoga);
@@ -71,11 +82,8 @@ RadarChart.defaultConfig.color = function() {};
 	RadarChart.draw(".chart-london", london);
 	RadarChart.draw(".chart-paris", paris);
 
-	RadarChart.defaultConfig.axisText = true;
-	// RadarChart.defaultConfig.radius = 2;
-	RadarChart.draw(".chart-avg", avg);
-	RadarChart.defaultConfig.w = 120;
-	RadarChart.defaultConfig.h = 120;
+	
+
 </script>
 
 <!-- <script type="text/javascript" src="assets/js/application.js"></script> -->

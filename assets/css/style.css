@@ -7,16 +7,14 @@ body {
   text-align: center; }
 
 .radar-chart .area {
-  fill-opacity: 0.7; }
-
-.radar-chart.focus .area {
-  fill-opacity: 0.7; }
+  fill-opacity: 0.5; }
+.radar-chart .circle {
+  fill-opacity: 0.5; }
 
 .radar-chart.focus .circle.focused {
   fill-opacity: 1.0; }
-
 .radar-chart.focus .area.focused {
-  fill-opacity: 0.9; }
+  fill-opacity: 0.8; }
 
 .area.single, .single .circle {
   fill: #2191FB; }
@@ -44,24 +42,20 @@ body {
   fill: #D84B52; }
 
 .chart-map {
-  position: relative;
-  padding-top: 40px; }
+  position: relative; }
   .chart-map .country {
-    width: 320px;
-    height: 320px;
+    width: 280px;
+    height: 280px;
     text-align: center;
     display: inline-block;
-    padding: 20px; }
+    padding: 40px 20px 20px 20px; }
     .chart-map .country .name {
       padding: 0;
       margin: 0;
       position: relative;
       color: #3E454C;
       text-transform: uppercase;
-      font-size: 12px; }
-
-.chart-argentina {
-  left: auto;
-  top: auto; }
+      font-size: 12px;
+      top: -16px; }
 
 /*# sourceMappingURL=style.css.map */
