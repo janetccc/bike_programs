@@ -1,0 +1,67 @@
+body {
+  background: #fff;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+
+.chart-title {
+  margin: auto;
+  text-align: center; }
+
+.radar-chart .area {
+  fill-opacity: 0.7; }
+
+.radar-chart.focus .area {
+  fill-opacity: 0.7; }
+
+.radar-chart.focus .circle.focused {
+  fill-opacity: 1.0; }
+
+.radar-chart.focus .area.focused {
+  fill-opacity: 0.9; }
+
+.area.single, .single .circle {
+  fill: #2191FB; }
+
+.area.multi, .multi .circle {
+  fill: #D84B52; }
+
+.chart-avg .area.multi {
+  fill-opacity: 0.07; }
+  .chart-avg .area.multi .circle {
+    fill-opacity: 0; }
+.chart-avg .area.single {
+  fill-opacity: 0.5; }
+  .chart-avg .area.single .circle {
+    fill-opacity: 0; }
+.chart-avg .radar-chart.focus .area.single {
+  fill-opacity: 0.3; }
+.chart-avg .radar-chart.focus .area.single.focused {
+  fill-opacity: 0.7; }
+.chart-avg .radar-chart.focus .area.multi.focused {
+  fill-opacity: 0.7; }
+.chart-avg .area.single, .chart-avg .single .circle {
+  fill: #2191FB; }
+.chart-avg .area.multi, .chart-avg .multi .circle {
+  fill: #D84B52; }
+
+.chart-map {
+  position: relative;
+  padding-top: 40px; }
+  .chart-map .country {
+    width: 320px;
+    height: 320px;
+    text-align: center;
+    display: inline-block;
+    padding: 20px; }
+    .chart-map .country .name {
+      padding: 0;
+      margin: 0;
+      position: relative;
+      color: #3E454C;
+      text-transform: uppercase;
+      font-size: 12px; }
+
+.chart-argentina {
+  left: auto;
+  top: auto; }
+
+/*# sourceMappingURL=style.css.map */

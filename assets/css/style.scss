@@ -1,0 +1,158 @@
+//-- Variables --//
+$gap: 320px;
+
+$one: auto;
+$two: $gap*1;
+$three: $gap*2;
+$four: $gap*3;
+$five: $gap*4;
+$six: $gap*5;
+$seven: $gap*6;
+$eight: $gap*7;
+$nine: $gap*8;
+$ten: $gap*9;
+$eleven: $gap*10;
+$twelve: $gap*11;
+$thirteen: $gap*12;
+$fourteen: $gap*13;
+$fifteen: $gap*14;
+$sixteen: $gap*15;
+$seventeen: $gap*16;
+$eighteen: $gap*17;
+$nineteen: $gap*18;
+
+$c1: #2191FB; //blue
+$c2: #D84B52; //red
+// $c2: #BA274A; //red
+$c3: #fff; //lightest
+$c4: #3E454C; //darkest
+$c5: #2185C5; //dark blue
+
+$light: 300;
+$normal: 400;
+$semibold: 600;
+$bold: 700;
+
+
+//-- Style --//
+body {
+  background: $c3;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.chart-title {
+	margin: auto;
+	text-align: center;
+}
+
+
+//-- color & all --//
+.radar-chart .area {
+  fill-opacity: 0.7;
+}
+.radar-chart.focus .area {
+  fill-opacity: 0.7;
+}
+.radar-chart.focus .circle.focused {
+  fill-opacity: 1.0;
+}
+.radar-chart.focus .area.focused {
+  fill-opacity: 0.9;
+}
+.area.single, .single .circle {
+  fill: $c1;
+  // stroke: none;
+}
+.area.multi, .multi .circle {
+  fill: $c2;
+  // stroke: none;
+}
+
+.chart-avg {
+
+	.area.multi  {
+  		fill-opacity: 0.07;
+
+  		.circle {
+  			fill-opacity: 0;
+  		}
+	}
+
+	.area.single  {
+  		fill-opacity: 0.5;
+
+  		.circle {
+  			fill-opacity: 0;
+  		}
+	}
+
+	.radar-chart.focus {
+		.area.single {
+			fill-opacity: 0.3;
+		}
+
+		.area.single.focused  {
+			fill-opacity: 0.7;
+		}
+
+		.area.multi.focused{
+			fill-opacity: 0.7;
+		}
+
+		.circle {
+
+		}
+	}
+
+	// .radar-chart.focus .area {
+	//   	fill-opacity: 0.3;
+	// }
+	// .radar-chart.focus .circle.focused {
+	//   	fill-opacity: 1.0;
+	// }
+	// .radar-chart.focus .area.focused {
+	//   	fill-opacity: 0.9;
+	// }
+	.area.single, .single .circle {
+		fill: $c1;
+		// fill-opacity: 0.1;
+		// stroke: none;
+	}
+	.area.multi, .multi .circle {
+		fill: $c2;
+		// fill-opacity: 0.1;
+		// stroke: none;
+	}
+}
+
+//-- chart-map --//
+.chart-map {
+	// width: $nineteen;
+	// height: $sixteen;
+	position: relative;
+	padding-top: 40px;
+
+	.country {
+		// position: absolute;
+		width: $gap;
+		height: $gap;
+		text-align: center;
+		display: inline-block;
+		padding: 20px;
+		// border: 1px solid #ff0;
+
+		.name {
+			padding: 0;
+			margin: 0;
+			position: relative;
+			color: $c4;
+			text-transform: uppercase;
+			font-size: 12px;
+		}
+	}
+}
+
+.chart-argentina {
+	left: $one;
+	top: $one;
+}

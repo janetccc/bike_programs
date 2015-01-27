@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Bike Programs</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link rel="stylesheet" href="assets/css/radar-chart.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<div class="wrapper">
+	<div class="chart-map">
+		<div class="country chart-austin"><p class="name">austin</p></div>
+		<div class="country chart-boston"><p class="name">boston</p></div>
+		<div class="country chart-chattanoga"><p class="name">chattanoga</p></div>
+		<div class="country chart-chicago"><p class="name">chicago</p></div>
+		<div class="country chart-columbus"><p class="name">columbus</p></div>
+		<div class="country chart-denver"><p class="name">denver</p></div>
+		<div class="country chart-houston"><p class="name">houston</p></div>
+		<div class="country chart-minneapolis"><p class="name">minneapolis</p></div>
+		<div class="country chart-newyork"><p class="name">newyork</p></div>
+		<div class="country chart-sanfrancisco"><p class="name">sanfrancisco</p></div>
+		<div class="country chart-washington"><p class="name">washington</p></div>
+		<div class="country chart-barcelona"><p class="name">barcelona</p></div>
+		<div class="country chart-london"><p class="name">london</p></div>
+		<div class="country chart-paris"><p class="name">paris</p></div>
+		<div class="country chart-avg"><p class="name">average</p></div>
+	
+	</div> <!-- end of chart-map -->
+
+	
+
+</div> <!-- end of wrapper -->
+
+
+<script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+<script type="text/javascript" src="assets/js/radar-chart.js"></script>
+<script type="text/javascript" src="assets/js/data.js"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+
+<script>
+RadarChart.defaultConfig.color = function() {};
+// RadarChart.defaultConfig.radius = 3;
+</script>
+
+<script>
+	RadarChart.defaultConfig.levelTick = true;
+	RadarChart.defaultConfig.axisText = false;
+	RadarChart.defaultConfig.radius = 2;
+	RadarChart.defaultConfig.radius = 2;
+	RadarChart.draw(".chart-austin", austin);
+	RadarChart.draw(".chart-boston", boston);
+	RadarChart.draw(".chart-chattanoga", chattanoga);
+	RadarChart.draw(".chart-chicago", chicago);
+	RadarChart.draw(".chart-columbus", columbus);
+	RadarChart.draw(".chart-denver", denver);
+	RadarChart.draw(".chart-houston", houston);
+	RadarChart.draw(".chart-minneapolis", minneapolis);
+	RadarChart.draw(".chart-newyork", newyork);
+	RadarChart.draw(".chart-sanfrancisco", sanfrancisco);
+	RadarChart.draw(".chart-washington", washington);
+	RadarChart.draw(".chart-barcelona", barcelona);
+	RadarChart.draw(".chart-london", london);
+	RadarChart.draw(".chart-paris", paris);
+
+	RadarChart.defaultConfig.axisText = true;
+	// RadarChart.defaultConfig.radius = 2;
+	RadarChart.draw(".chart-avg", avg);
+	RadarChart.defaultConfig.w = 120;
+	RadarChart.defaultConfig.h = 120;
+</script>
+
+<!-- <script type="text/javascript" src="assets/js/application.js"></script> -->
+
+</html>
